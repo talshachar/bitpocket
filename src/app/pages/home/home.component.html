@@ -1,0 +1,6 @@
+<h2>Welcome {{user.name}}</h2>
+<ul>
+    <li><img class="icon" src="assets/icons/bitcoin.svg" alt="" /> BTC: {{user.coins}}</li>
+    <li><img class="icon" src="assets/icons/bitcoin-rate.svg" alt="" /> BTC Rate: {{rate | currency:user.currency}}</li>
+    <li><img class="icon" src="assets/icons/cash.svg" alt="" /> Value: {{rate * user.coins | currency:user.currency}}</li>
+</ul>
